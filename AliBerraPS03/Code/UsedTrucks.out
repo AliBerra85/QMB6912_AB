@@ -28,7 +28,7 @@ Min. ror "1.0493" "1.0999"
 Mean ror "1.0497" "1.1000"
 Max. ror "1.0493" "1.0999"
 % latex table generated in R 4.0.5 by xtable 1.8-4 package
-% Fri Feb 11 17:22:10 2022
+% Tue Feb 15 20:02:20 2022
 \begin{table}[ht]
 \centering
 \begin{tabular}{rll}
@@ -113,7 +113,7 @@ Totals  1091     119     547     856    1312    1737    1851    1401    1074
 7           97     46     686    743
 Totals     684    280    4890   4971
 % latex table generated in R 4.0.5 by xtable 1.8-4 package
-% Fri Feb 11 17:22:10 2022
+% Tue Feb 15 20:02:20 2022
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrr}
@@ -135,7 +135,7 @@ Totals     684    280    4890   4971
 \end{table}
 [1] "Brand of Trucks"
 % latex table generated in R 4.0.5 by xtable 1.8-4 package
-% Fri Feb 11 17:22:10 2022
+% Tue Feb 15 20:02:20 2022
 \begin{table}[ht]
 \centering
 \begin{tabular}{rrrrrrrrrrr}
