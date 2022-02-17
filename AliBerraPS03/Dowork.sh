@@ -54,7 +54,7 @@ echo ""
 # The default version needs no options.
 # pdflatex name_of_my_paper.tex
 
-cd paper
+cd Paper
 
 # We need options for extra permission in the VirtualBox machine.
 pdflatex -shell-escape Trucks_Tables.tex

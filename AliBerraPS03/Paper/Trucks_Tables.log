@@ -1,35 +1,36 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2022.2.10)  10 FEB 2022 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.5.23)  15 FEB 2022 20:02
 entering extended mode
 **./Trucks_Tables.tex
 (Trucks_Tables.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2021-11-22>
-(C:\Users\alibe\AppData\Local\Programs\MiKTeX\n\tex/latex/base\article.cls
-Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(C:\Users\alibe\AppData\Local\Programs\MiKTeX\n\tex/latex/base\size11.clo
-File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-05-11>
+(C:\Users\le279259\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\le279259\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count183
-\c@section=\count184
-\c@subsection=\count185
-\c@subsubsection=\count186
-\c@paragraph=\count187
-\c@subparagraph=\count188
-\c@figure=\count189
-\c@table=\count190
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(C:\Users\alibe\AppData\Local\Programs\MiKTeX\n\tex/latex/preprint\fullpage.sty
+(C:\Users\le279259\AppData\Local\Programs\MiKTeX\tex/latex/preprint\fullpage.st
+y
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip49
 )
-(C:\Users\alibe\AppData\Local\Programs\MiKTeX\n\tex/latex/l3backend\l3backend-p
-dftex.def
-File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count191
-\l__pdf_internal_box=\box50
+(C:\Users\le279259\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
+pdftex.def
+File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count187
+\l__pdf_internal_box=\box47
 ) (Trucks_Tables.aux)
 \openout1 = `Trucks_Tables.aux'.
 
@@ -55,39 +56,32 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 31.
  [1
 
-{C:/Users/alibe/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (../Tables/s
-umm_by_type.tex)
-
-LaTeX Warning: Reference `tab: Dealer' on page 2 undefined on input line 88.
-
-(../Tables/By_Dealer.tex
+{C:/Users/le279259/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (../Tables/s
+umm_by_type.tex) (../Tables/By_Dealer.tex
 Overfull \hbox (23.65639pt too wide) in paragraph at lines 5--19
  [][] 
  []
 
-) [2] (../Tables/Truck_by_Brand.tex) [3] (Trucks_Tables.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+) [2] (../Tables/Truck_by_Brand.tex) [3] (Trucks_Tables.aux) ) 
 Here is how much of TeX's memory you used:
- 492 strings out of 478686
- 10001 string characters out of 2845704
- 656020 words of memory out of 3000000
- 18653 multiletter control sequences out of 15000+600000
+ 464 strings out of 479163
+ 9257 string characters out of 2852567
+ 303237 words of memory out of 3000000
+ 18141 multiletter control sequences out of 15000+600000
  407555 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,9n,38p,287b,226s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/alibe/AppData/Local/Programs/MiKTeX/n/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb><C:/Users/alibe/AppData/Local/Programs/MiKTeX/n/fonts/type1/public
-/amsfonts/cm/cmbx12.pfb><C:/Users/alibe/AppData/Local/Programs/MiKTeX/n/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/alibe/AppData/Local/Programs/MiKTeX
-/n/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/alibe/AppData/Local/Progra
-ms/MiKTeX/n/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/alibe/AppData/L
-ocal/Programs/MiKTeX/n/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Trucks_Tables.pdf (3 pages, 89361 bytes).
+ 32i,8n,38p,287b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/le27925
+9/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/U
+sers/le279259/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx
+12.pfb><C:/Users/le279259/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><C:/Users/le279259/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr8.pfb><C:/Users/le279259/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/le279259/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Trucks_Tables.pdf (3 pages, 84028 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
+ 36 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

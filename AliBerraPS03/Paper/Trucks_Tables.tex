@@ -18,12 +18,12 @@
 \centerline{\bf Problem Set \#3}
 \vskip 32pt
 \noindent
-% 
+%
 \section{Data Description}
-% 
+%
 Several Dealerships has gather releveant and appropriate information, and organized a dataset concerning 9,861 sales invlolving a trade-in of truck at nine dealerships.  These data are contained in the file {\tt UsedTrucks.dat}, which is
 available in the {\tt Data} folder.
-Each Truck sale in the data set is a row, while the columns correspond 
+Each Truck sale in the data set is a row, while the columns correspond
 to the variables whose names and definitions are the following:
 \bigskip
 \begin{table}[ht]
@@ -33,16 +33,16 @@ to the variables whose names and definitions are the following:
     Variable & Definition \\
   \hline
 
-    {\tt type}        &sale type \\ 
-    {\tt pauc}       &price when sold at auction \\ 
-    {\tt pret}      &price when sold retail \\ 
-    {\tt mileage}    &odometer \\ 
-    {\tt make}       &make of vehicule \\ 
-    {\tt year}       &model year of vehicle \\ 
+    {\tt type}        &sale type \\
+    {\tt pauc}       &price when sold at auction \\
+    {\tt pret}      &price when sold retail \\
+    {\tt mileage}    &odometer \\
+    {\tt make}       &make of vehicule \\
+    {\tt year}       &model year of vehicle \\
     {\tt damage}      &an index of damage to vehicle, 1 little damage, 10 a lot\\
-    {\tt dealer}     &dealer id \\ 
-    {\tt ror}    &rate-of-return \\ 
-    {\tt ror}             &net amount given to trade-in \\ 
+    {\tt dealer}     &dealer id \\
+    {\tt ror}    &rate-of-return \\
+    {\tt ror}             &net amount given to trade-in \\
   \hline
 \end{tabular}
 %\caption{Summary of Numeric Variables}
@@ -51,22 +51,22 @@ to the variables whose names and definitions are the following:
 
 \bigskip
 \noindent
-I have downloaded the file {\tt UsedTrucks.dat}, 
-loaded the data described above into 
-\textsf{R}, 
-calculated the summary statistics for these data, 
-and finally, presented 
+I have downloaded the file {\tt UsedTrucks.dat},
+loaded the data described above into
+\textsf{R},
+calculated the summary statistics for these data,
+and finally, presented
 these statistics in \LaTeX\ tables.
-These operations are all performed by the script 
-{\tt UsedTrucks\_Tables.R} in the {\tt Code} folder. 
-The script uses an \textsf{R} package called {\tt xtable} 
+These operations are all performed by the script
+{\tt UsedTrucks\_Tables.R} in the {\tt Code} folder.
+The script uses an \textsf{R} package called {\tt xtable}
 to automate the
 production of the tables from a data frames in \textsf{R}.)
 
 \medskip
 \noindent
-I analyze the data in subsets, according to Type , 
-calculating the summary statistics for each subset and present these 
+I analyze the data in subsets, according to Type ,
+calculating the summary statistics for each subset and present these
 statistics in the \LaTeX\ tables that follow.
 
 \vfill
@@ -77,7 +77,7 @@ statistics in the \LaTeX\ tables that follow.
 \section{Summary by Sale Type}
 
 Table2 lists summary statistics for numeric variables
-in separate columns for subsamples defined by Type ( o for Trucks sold in auction and 1 for Trucks sold in retail). 
+in separate columns for subsamples defined by Type ( o for Trucks sold in auction and 1 for Trucks sold in retail).
 
 \input{../Tables/summ_by_type}
 
@@ -85,8 +85,8 @@ in separate columns for subsamples defined by Type ( o for Trucks sold in auctio
 
 \section{By Dealer}
 
-Table \ref{tab: Dealer} lists the frequencies of observations of 
-each Dealer . 
+Table \ref{tab:By_dealer} lists the frequencies of observations of
+each Dealer .
 
 \input{../Tables/By_Dealer}
 
