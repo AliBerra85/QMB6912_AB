@@ -14,9 +14,9 @@
 ##################################################
 
 
-# Ali Berra 
+# Ali Berra
 # Assignment 04
-# 
+#
 
 ###################################################
 # Sample code for the problem sets in the course QMB 6912,
@@ -95,21 +95,21 @@ print('Summary by type of Manufacture:')
 print('Plotting ECDF.')
 ##################################################
 
-# 
-# 
+#
+#
 
 #fig_file_name <- 'ecdf'
 # ecdf_prices <- ecdf(Truck[,'ror'])
 # vals <- data.frame(r1=Truck$ror,
 #                    r2=Truck$type,
 #                    r3=Truck$cost)
-# 
+#
 # ?ecdf
-# 
+#
 # plot(~ r1 + r2 + r3, data=vals, auto.key=list(space='right'))
-# 
-# 
-# 
+#
+#
+#
 # fig_file_name <- 'ecdf_prices.eps'
 # out_file_name <- sprintf('%s/%s', fig_dir, fig_file_name)
 # setEPS()
@@ -154,7 +154,7 @@ fig_file_name <- 'ecdf_ror.eps'
 out_file_name <- sprintf('%s/%s', fig_dir, fig_file_name)
 pdf(out_file_name)
 plot(ecdf_price,
-     main = 'Empirical Cumulative Distribution Function of ror Prices',
+     main = 'Empirical Cumulative Distribution Function of ror',
      xlab = 'ror',
      ylab = 'Empirical C.D.F.')
 dev.off()
@@ -187,7 +187,7 @@ out_file_name <- sprintf('%s/%s', fig_dir, fig_file_name)
 setEPS()
 postscript(out_file_name)
 plot(density_log_price,
-     main = 'Kernel-smoothed pdf of the Natural Log. of Fly Reel Prices',
+     main = 'Kernel-smoothed pdf of the Natural Log. of Used Truck Prices',
      xlab = 'Price')
 dev.off()
 

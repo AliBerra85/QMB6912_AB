@@ -1,0 +1,36 @@
+[1] "Summary of UsedTrucks.dat dataset:"
+      type             pauc            pret          mileage      
+ Min.   :0.0000   Min.   :    0   Min.   :    0   Min.   : 13222  
+ 1st Qu.:0.0000   1st Qu.:    0   1st Qu.:    0   1st Qu.: 73254  
+ Median :1.0000   Median :  116   Median :    0   Median :111171  
+ Mean   :0.5041   Mean   : 1848   Mean   : 1915   Mean   :110739  
+ 3rd Qu.:1.0000   3rd Qu.: 1809   3rd Qu.: 1906   3rd Qu.:147815  
+ Max.   :1.0000   Max.   :49686   Max.   :52400   Max.   :208655  
+      make            year          damage           dealer     
+ Min.   :1.000   Min.   :2005   Min.   : 1.000   Min.   :1.000  
+ 1st Qu.:2.000   1st Qu.:2008   1st Qu.: 4.000   1st Qu.:3.000  
+ Median :4.000   Median :2012   Median : 6.000   Median :5.000  
+ Mean   :4.011   Mean   :2012   Mean   : 5.697   Mean   :5.009  
+ 3rd Qu.:6.000   3rd Qu.:2016   3rd Qu.: 7.000   3rd Qu.:7.000  
+ Max.   :7.000   Max.   :2019   Max.   :10.000   Max.   :9.000  
+      ror              cost      
+ Min.   :0.9000   Min.   :   35  
+ 1st Qu.:0.9498   1st Qu.:  833  
+ Median :1.0002   Median : 1871  
+ Mean   :1.0001   Mean   : 3755  
+ 3rd Qu.:1.0496   3rd Qu.: 4214  
+ Max.   :1.1000   Max.   :46471  
+[1] "Summarizing Numeric Variables"
+[1] "Summary by type of Manufacture:"
+[1] "Plotting ECDF."
+pdf 
+  2 
+pdf 
+  2 
+[1] "Ploting relative histogram of retail price."
+pdf 
+  2 
+[1] "Plotting kernel-smoothed pdf"
+[1] "of the natural logarithm of price."
+pdf 
+  2 
