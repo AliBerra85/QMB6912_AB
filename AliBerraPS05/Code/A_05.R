@@ -14,9 +14,9 @@
 ##################################################
 
 
-# Ali Berra 
+# Ali Berra
 # Assignment 05
-# 
+#
 
 ###################################################
 # Sample code for the problem sets in the course QMB 6912,
@@ -28,8 +28,8 @@
 #
 #
 ##################################################
-install.packages("lattice")
-install.packages("latticeExtra")
+# install.packages("lattice")
+# install.packages("latticeExtra")
 library(lattice)
 library(latticeExtra)
 
@@ -42,7 +42,7 @@ library(latticeExtra)
 rm(list=ls(all=TRUE))
 
 # Set working directory, if running interactively.
-# wd_path <- '~/GitHub/QMB6912S22/demo_03/FlyReel_Tables'
+# wd_path <- '~/GitHub/QMB6912_AB/demo_03/FlyReel_Tables'
 # setwd(wd_path)
 
 
@@ -128,7 +128,7 @@ splom(Truck[, splom_var_list])
 dev.off()
 
 
-#cheking the relationship between mileage and age 
+#cheking the relationship between mileage and age
 library("tidyverse")
 
 fig_file_name <- 'age_mileage_plot.pdf'
@@ -141,7 +141,7 @@ ggplot(head(Truck,nrow(Truck)), aes(x =age, y =mileage, na.rm =TRUE)) +
   geom_point(data = Truck, aes(x =age, y =mileage, na.rm =TRUE))
 dev.off()
 
-#cheking the relationship between pret and age 
+#cheking the relationship between pret and age
 fig_file_name <- 'pert_age_plot.pdf'
 out_file_name <- sprintf('%s/%s', fig_dir, fig_file_name)
 
@@ -152,7 +152,7 @@ ggplot(head(Truck,nrow(Truck)), aes(x =pret, y =age, na.rm =TRUE)) +
   geom_point(data = Truck, aes(x =pret, y =age, na.rm =TRUE))
 dev.off()
 
-#cheking the relationship between pauc and age 
+#cheking the relationship between pauc and age
 fig_file_name <- 'pauc_age_plot.pdf'
 out_file_name <- sprintf('%s/%s', fig_dir, fig_file_name)
 
