@@ -57,8 +57,8 @@ tab_dir <- 'Tables'
 # Packages with the Box-Cox Transformation
 library(MASS)
 library(car)
-install.packages("car")
-install.packages("EnvStats")
+# install.packages("car")
+# install.packages("EnvStats")
 library(EnvStats)
 
 
@@ -68,6 +68,11 @@ library(EnvStats)
 ##################################################
 
 # Set parameters for flyreel dataset.
+# I mentioned in class (and in an announcement on Webcourses)
+# that I replaced the dataset.
+# Now that I got the code working and replaced the dataset,
+# please see the document in the paper folder for the results.
+#
 in_file_name <- sprintf('%s/%s', data_dir, "UsedTrucks.dat")
 Truck_col_names <- c('type', 'pauc', 'pret', 'mileage', 'make',
                      'year', 'damage', 'dealer', 'ror', 'cost')
@@ -100,8 +105,13 @@ print(summary(Truck))
 
 # Create a density variable.
 colnames(Truck)
-flyreels[, 'Volume'] <- pi * (flyreels[, 'Diameter']/2)^2 * flyreels[, 'Width']
-flyreels[, 'Density'] <- flyreels[, 'Weight'] / flyreels[, 'Volume']
+# This doesn't make sense here:
+# flyreels[, 'Volume'] <- pi * (flyreels[, 'Diameter']/2)^2 * flyreels[, 'Width']
+# flyreels[, 'Density'] <- flyreels[, 'Weight'] / flyreels[, 'Volume']
+# And it throws an error.
+
+
+# But this works:
 
 # Create logarithm of dependent variable.
 Truck[, 'log_ror'] <- log(Truck[, 'ror'])
@@ -221,28 +231,28 @@ print(c('Calculating Box-Cox Transformation',
 
 # Box-Cox transformation.
 Lambda_ror <- function(ror, lambda) {
-  
+
   if (lambda == 0) {
     return(log(ror))
   } else {
     return((ror^lambda - 1)/lambda)
   }
-  
+
 }
 
 log_like_uni <- function(ror, lambda) {
-  
+
   n <- length(ror)
   lambda_ror <- Lambda_ror(ror, lambda)
   mu_0_lambda <- mean(lambda_ror)
   sigma_2_lambda <- sum((lambda_ror - mu_0_lambda)^2)/n
-  
+
   like <- - n/2*log(2*pi*sigma_2_lambda)
   like <- like - 1/2/sigma_2_lambda*sum((lambda_ror - mu_0_lambda)^2)
   like <- like + (lambda - 1)*sum(log(ror))
-  
+
   return(like)
-  
+
 }
 
 # Calculate values of the log-likelihood function.
@@ -431,7 +441,7 @@ dev.off()
 
 # Add variables to regression equation.
 # Now modeling the residuals.
-bc_grid_MASS <- MASS::boxcox(ror ~ Country,
+bc_grid_MASS <- MASS::boxcox(ror ~ type,
                              data = Truck,
                              lambda = lambda_grid)
 # Find the MLE.
