@@ -1,0 +1,23 @@
+\begin{verbatim}
+Family: gaussian 
+Link function: identity 
+
+Formula:
+log_cost ~ s(damage) + s(age)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  7.53777    0.01077   700.2   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+            edf Ref.df       F p-value    
+s(damage) 1.000  1.000   0.908   0.341    
+s(age)    4.149  5.111 243.022  <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.191   Deviance explained = 19.1%
+GCV = 1.1436  Scale est. = 1.1429    n = 9861
+\end{verbatim}

@@ -1,0 +1,30 @@
+\begin{verbatim}
+Family: gaussian 
+Link function: identity 
+
+Formula:
+log_cost ~ s(damage) + age + make + damage + dealer + mileage + 
+    age + type
+
+Parametric coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  1.209e+00  3.007e-02  40.192  < 2e-16 ***
+age         -7.148e-02  1.114e-02  -6.417 1.46e-10 ***
+make        -6.227e-03  5.368e-03  -1.160   0.2461    
+damage       1.310e+00  9.977e-03 131.253  < 2e-16 ***
+dealer       1.870e-03  4.169e-03   0.448   0.6538    
+mileage     -5.072e-06  1.062e-06  -4.774 1.84e-06 ***
+type         4.453e-02  2.182e-02   2.041   0.0413 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+           edf Ref.df    F p-value    
+s(damage) 4.75  5.914 3432  <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Rank: 15/16
+R-sq.(adj) =  0.191   Deviance explained = 19.1%
+GCV = 1.1444  Scale est. = 1.1431    n = 9861
+\end{verbatim}
