@@ -1,0 +1,81 @@
+\documentclass{paper}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\epstopdfsetup{suffix=}
+\UseRawInputEncoding
+
+\usepackage{color}
+\begin{document}
+
+
+
+\pagestyle{empty}
+
+{\noindent\bf Spring 2021 \hfill Ali Berra, Alex Georgiopoulus, Caroline Gear}
+
+\vskip 16pt
+
+\centerline{\bf University of Central Florida}
+
+\centerline{\bf College of Business}
+
+\vskip 16pt
+
+\centerline{\bf QMB 6911}
+
+\centerline{\bf Capstone Project in Business Analytics}
+
+\vskip 10pt
+
+\centerline{\bf Solutions:  Problem Set \#10}
+
+\vskip 32pt
+
+\noindent
+
+\section{Introduction}
+We will be estimating a sample-selection model for the Used Truck data set.  The sample selection would be useful for this data set because the data includes sales for the trucks in auction and in retail.  This would be useful to estimate in order to notice if there is any differences between the two types of sales within the data set and find if there are different significant variables.  There could be difference which may be helpful to know when attempting to predict the rate of return for Used Trucks in auction or retail sales.  
+
+\section{Linear Models}
+The following table shows the linear models created for both auction and retail respectively.  There are some differences shown between the linear model between a few of the variables.  The age variable had a slightly higher impact on auction sales than retail sales such that a higher age affects auction slightly more(respectively -0.006 vs -0004).  The damage variables lowers the ror more for the retail side versus auction side ( respectively -0.1 vs -0.07).  Also, some dealers and make models had more of an effect whether they were in retail or auction which can indicate some favoritism from people who go to auctions and retail looking for the specific makes or dealers they visit.
+
+{\color{red}
+It would be nice to show the coefficients for the full sample (with a type indicator)
+to compare the coefficeints.
+}
+\input{../Tables/lm_rec_auc}
+\pagebreak
+
+\section{Probit Models for Sample Selection}
+
+
+{\color{red}
+This would be nice to include to show the rationale for 
+your model specification in the next section.
+}
+
+\section{Sample Selection Model}
+The sample selection model that was best for the variables is show below. The model was created by sampling the auction and retail data within the data set. Different models were played with but to show all the variables on one table, only the final one was shown as it created multiple lines due to dealer being a categorical variable and creating multiple lines.  The retail sample model excluded the mileage, square root of mileage and make variables while the auction excluded the mileage and make variables.
+\\
+The sample model ended up with all the variables being signficant including the different types of dealers between auction and retail.  Comparitevly only dealer 6 within the auction data set for the linear model was not signficant while the other dealers were.  This could mean that dealer is not as important to some people buying at the auction sales.  The age variable coefficient for retail in the sample model was -0.02 while in the linear model it was -0.004.  This could show that age has more of an impact in the retail sales than was shown in the linear model.  On the other hand, the sample model age variable coefficient was -0.0045 compared to a -0.0058.   This is a much smaller increase between the models when compared to the difference in retail age differences.  It could be considered that people selling in retail should be more wary of the age of cars sold as it can lower the rate of return for the Used Trucks.
+\\
+The differences in damage between the linear model and sample model were not as huge.  The auction coefficients for the sample was -0.078 versus the linear model at -0.071.  The retail coefficients for the sample were -0.098 and for the linear it was -0.108.   They both rose almost 0.007 and 0.01 respectively.  These is a tiny increase but it could be inferred that perhaps damage has more of an impact on both retail and auction sales than was shown in the linear model.
+The dealer variable also experiences some slight differences between the sample model and linear models.  For the retail side, all the nine of the dealers coefficients slightly increase from the linear model to the sample model which would indicate that the dealers have a bigger impact on the rate of return.  The auction sales also had similar difference in that the sample model increased the coefficient slightly when compared to the linear model.
+\\
+Comparing the linear models from the split between the auction and retail showed some differences in the r-squared.  For auction, the r-squared was lowered from 0.41 to 0.39.  However, the retail r-squared increased from 0.41 to 0.64.  This increased shows that the model had a better fit for the retail sales than the auction sales.  This could indicate that some of the variables within the model may be more significant in retail than in auction and could be looked further to see if reducing the model for auction could create a better linear model for the auction data.
+
+\input{../Tables/tobit_5_sel}
+% \pagebreak
+
+
+{\color{red}
+This would be nice to include the series of model specifications
+to show the process through which you obtained the final model.
+For example, it would have followed a logical progression if 
+your first model had a selection equation that matched the outcome
+of your variable reduction for the probit model. 
+All things considered, this is a good final model.
+}
+
+
+\end{document}
