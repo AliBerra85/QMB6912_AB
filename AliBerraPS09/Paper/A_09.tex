@@ -64,6 +64,12 @@
 \vskip 32pt
 \noindent
 % 
+
+{\color{red}
+Please see my comments in
+Section \ref{sec:Box-Tidwell}.
+}
+
 \section{Data Description}
 
 This analysis follows the script \texttt{Trucks\_Reg\_Model.R} to produce a more accurate model for used trucks cost with the data from \texttt{UsedTrucks.dat} in the \texttt{Data} folder. 
@@ -362,7 +368,14 @@ nonlinear relationship with value of horsepower.
 
 
 \pagebreak
-\section{The Box--Tidwell Transformation}
+\section{The Box--Tidwell Transformation}\label{sec:Box-Tidwell}
+
+
+{\color{red}
+As I mentioned for Problem Set 10, 
+I prefer the ROR as the dependent variable, since the distribution looks normal
+and it is a specification that relates to the business question. 
+}
 
 The Box--Tidwell function tests for non-linear relationships
 to the mean of the dependent variable.
@@ -390,6 +403,12 @@ Similar to the Box-Cox transformation,
 with Box-Tidwell, the exponents are on the explanatory variables
 and are all called lambda, in contrast
 to the parameter $\tau$ in our class notes.
+
+{\color{red}
+These conclusions don't match what was found.
+}
+
+
 The exponent is significantly different from 0,
 although it is a small positive value,
 which suggests an increasing relationship
@@ -403,6 +422,10 @@ for the next continuous variable.
 
 
 \input{../Tables/bt_age}
+
+{\color{red}
+These conclusions don't match what was found.
+}
 
 This coefficient is effectively 1, which is more evidence of
 a purely linear relationship between \texttt{log\_saleprice}
@@ -431,6 +454,11 @@ with nonlinearity in all three continuous variables.
 
 \input{../Tables/bt_full}
 
+{\color{red}
+This appears to be executed correctly
+but these conclusions don't match what was found.
+}
+
 
 The performance is similar to the other models with
 forms of nonlinearity for the value of horsepower.
@@ -448,6 +476,10 @@ the damage variables a the linear regression model.
 % 
 
 % 
+
+{\color{red}
+So, what is the recommended model?
+}
 
 
 \input{../Tables/reg_sq_horse_sp_bt}
