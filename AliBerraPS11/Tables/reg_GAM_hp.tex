@@ -1,0 +1,51 @@
+\begin{verbatim}
+Family: gaussian 
+Link function: identity 
+
+Formula:
+ror ~ s(mileage) + age + make + damage + dealer + mileage + age + 
+    type
+
+Parametric coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  2.338e-01  4.583e-03  51.005  < 2e-16 ***
+age         -3.284e-03  1.349e-03  -2.435   0.0149 *  
+make2        8.415e-03  7.443e-03   1.131   0.2582    
+make3        9.675e-03  7.991e-03   1.211   0.2260    
+make4        7.743e-03  6.570e-03   1.179   0.2386    
+make5        8.241e-03  6.902e-03   1.194   0.2325    
+make6       -4.535e-02  6.703e-03  -6.765 1.39e-11 ***
+make7       -3.772e-02  7.069e-03  -5.336 9.68e-08 ***
+make8       -7.175e-02  9.829e-03  -7.300 3.05e-13 ***
+make9       -6.397e-02  1.091e-02  -5.862 4.68e-09 ***
+damage2     -1.155e-01  1.184e-02  -9.756  < 2e-16 ***
+damage3     -1.633e-01  1.072e-02 -15.229  < 2e-16 ***
+damage4     -2.516e-01  1.083e-02 -23.225  < 2e-16 ***
+damage5     -2.367e-01  1.104e-02 -21.433  < 2e-16 ***
+damage6     -2.866e-01  1.127e-02 -25.431  < 2e-16 ***
+damage7     -3.679e-01  1.301e-02 -28.278  < 2e-16 ***
+damage8     -4.135e-01  2.116e-02 -19.540  < 2e-16 ***
+damage9     -3.966e-01  2.598e-02 -15.267  < 2e-16 ***
+damage10    -4.431e-01  1.540e-02 -28.777  < 2e-16 ***
+dealer2     -3.794e-02  9.191e-03  -4.128 3.68e-05 ***
+dealer3      5.276e-02  6.929e-03   7.614 2.84e-14 ***
+dealer4     -5.639e-02  6.368e-03  -8.855  < 2e-16 ***
+dealer5      3.781e-02  8.740e-03   4.326 1.53e-05 ***
+dealer6      3.592e-03  6.212e-03   0.578   0.5632    
+dealer7      3.139e-02  7.456e-03   4.210 2.57e-05 ***
+dealer8     -5.468e-02  6.141e-03  -8.904  < 2e-16 ***
+dealer9     -6.329e-02  9.016e-03  -7.020 2.33e-12 ***
+mileage      1.348e-05  1.667e-07  80.853  < 2e-16 ***
+type1        1.033e-01  3.593e-03  28.756  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+             edf Ref.df    F p-value    
+s(mileage) 3.652  4.643 2640  <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Rank: 37/38
+R-sq.(adj) =  0.231   Deviance explained = 23.3%
+GCV = 0.029745  Scale est. = 0.029669  n = 12492
