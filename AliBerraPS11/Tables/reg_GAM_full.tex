@@ -1,0 +1,23 @@
+\begin{verbatim}
+Family: gaussian 
+Link function: identity 
+
+Formula:
+ror ~ s(mileage) + s(age)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 1.191988   0.001692   704.4   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+             edf Ref.df      F p-value    
+s(mileage) 6.059  7.350 20.651  <2e-16 ***
+s(age)     8.705  8.946  2.036  0.0233 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.0726   Deviance explained = 7.37%
+GCV = 0.035816  Scale est. = 0.03577   n = 12492
+\end{verbatim}
